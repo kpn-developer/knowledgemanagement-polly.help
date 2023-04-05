@@ -1,0 +1,1105 @@
+{
+	"info": {
+		"_postman_id": "9cc2ac2f-720e-4898-ac81-667d3262e008",
+		"name": "Knowledge Management–Polly.help",
+		"description": "The Knowledge Management API allows you to organize your organization's information with knowledge management software.\n\n ### Key highlights\n\n - **Sandbox:** Full-fledged capabilities.\n\n - **Security:** HTTPS, OAuth, Rate limit.\n\n - **Versioning:** Supports version-less API, version tight. If no version\n is provided (in header) it defaults to latest version. \n\n\n ---\n \n ## [KPN API Store](https://developer.kpn.com/)<br/>\n [Getting Started](https://developer.kpn.com/getting-started)\n \n\n ---\n\nContact Support:\n Name: API Support\n Email: api_developer@kpn.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "4406147-9cc2ac2f-720e-4898-ac81-667d3262e008"
+	},
+	"item": [
+		{
+			"name": "token",
+			"item": [
+				{
+					"name": "Retrieves polly.help token information.",
+					"id": "b242e39a-27b9-46cc-a4f3-04e281418338",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "API Version. If no version is provided it defaults to latest version.",
+								"key": "api-version",
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/token",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"token"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "",
+									"description": "API Version. If no version is provided it defaults to latest version.",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieves polly.help token information."
+					},
+					"response": [
+						{
+							"id": "07cdb9ec-711d-4080-a484-80e7c859204a",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/token",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"token"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Retrieves polly.help token information."
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"CustomerEmail\": \"<string>\",\n    \"Id\": \"<string>\",\n    \"IdType\": \"<string>\",\n    \"Token\": \"<string>\",\n    \"DocName\": \"<string>\"\n  },\n  {\n    \"CustomerEmail\": \"<string>\",\n    \"Id\": \"<string>\",\n    \"IdType\": \"<string>\",\n    \"Token\": \"<string>\",\n    \"DocName\": \"<string>\"\n  }\n]"
+						},
+						{
+							"id": "90bf8627-43b9-421c-adb8-a2119771b349",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/token?api-version=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"token"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Retrieves polly.help token information."
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"<string>\",\n  \"status\": \"<string>\",\n  \"name\": \"<string>\",\n  \"message\": \"<string>\",\n  \"info\": \"<string>\"\n}"
+						},
+						{
+							"id": "7a52bc90-897d-47d0-aa8e-1a2f79e3381a",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/token?api-version=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"token"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Retrieves polly.help token information."
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"<string>\",\n  \"status\": \"<string>\",\n  \"name\": \"<string>\",\n  \"message\": \"<string>\",\n  \"info\": \"<string>\"\n}"
+						},
+						{
+							"id": "8d847029-bd64-4f46-9f52-68ba3c5e4fcb",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/token?api-version=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"token"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Retrieves polly.help token information."
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"<string>\",\n  \"status\": \"<string>\",\n  \"name\": \"<string>\",\n  \"message\": \"<string>\",\n  \"info\": \"<string>\"\n}"
+						},
+						{
+							"id": "6c44ed29-a8f1-4bc5-9c05-dc6e80f1e7f1",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/token?api-version=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"token"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Retrieves polly.help token information."
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"<string>\",\n  \"status\": \"<string>\",\n  \"name\": \"<string>\",\n  \"message\": \"<string>\",\n  \"info\": \"<string>\"\n}"
+						},
+						{
+							"id": "9df9eb7e-4d10-4f52-a738-180c27440b11",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/token?api-version=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"token"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Retrieves polly.help token information."
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"<string>\",\n  \"status\": \"<string>\",\n  \"name\": \"<string>\",\n  \"message\": \"<string>\",\n  \"info\": \"<string>\"\n}"
+						},
+						{
+							"id": "c2eee612-2d01-40b5-9a2c-108a7c240a72",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/token?api-version=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"token"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Retrieves polly.help token information."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"<string>\",\n  \"status\": \"<string>\",\n  \"name\": \"<string>\",\n  \"message\": \"<string>\",\n  \"info\": \"<string>\"\n}"
+						},
+						{
+							"id": "d852df08-00f7-435e-bc28-8803d133f522",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/token?api-version=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"token"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Retrieves polly.help token information."
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"<string>\",\n  \"status\": \"<string>\",\n  \"name\": \"<string>\",\n  \"message\": \"<string>\",\n  \"info\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "4de11a39-0109-47c2-a8ec-db4992bc2fb9"
+		},
+		{
+			"name": "graphql",
+			"item": [
+				{
+					"name": "Send request to get article, publication, search, analytics and submit suggestion.",
+					"id": "1e22799d-2981-41fe-8d79-e1093bf6c7fb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "API Version. If no version is provided it defaults to latest version.",
+								"key": "api-version",
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": \"{{query}}\",\n  \"variables\": {\n    \"publicationId\": \"{{publicationId}}\",\n    \"api_token\": \"{{api_token}}\"\n  }\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/graphql",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"graphql"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "",
+									"description": "API Version. If no version is provided it defaults to latest version.",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Send request to get article, publication, search, analytics and submit suggestion."
+					},
+					"response": [
+						{
+							"id": "de9af5e9-7bac-45cb-a1ca-32de53baeae9",
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"query\": \"{{query}}\",\n  \"variables\": {\n    \"publicationId\": \"{{publicationId}}\",\n    \"api_token\": \"{{api_token}}\"\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/graphql",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"graphql"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Send request to get article, publication, search, analytics and submit suggestion."
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"id": "679db848-82f5-4007-b1a0-80e5a3a646a5",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"query\": \"{{query}}\",\n  \"variables\": {\n    \"publicationId\": \"{{publicationId}}\",\n    \"api_token\": \"{{api_token}}\"\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/graphql?api-version=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"graphql"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Send request to get article, publication, search, analytics and submit suggestion."
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"<string>\",\n  \"status\": \"<string>\",\n  \"name\": \"<string>\",\n  \"message\": \"<string>\",\n  \"info\": \"<string>\"\n}"
+						},
+						{
+							"id": "e47a8121-0280-49a9-b70a-279a5af0d5c4",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"query\": \"{{query}}\",\n  \"variables\": {\n    \"publicationId\": \"{{publicationId}}\",\n    \"api_token\": \"{{api_token}}\"\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/graphql?api-version=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"graphql"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Send request to get article, publication, search, analytics and submit suggestion."
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"<string>\",\n  \"status\": \"<string>\",\n  \"name\": \"<string>\",\n  \"message\": \"<string>\",\n  \"info\": \"<string>\"\n}"
+						},
+						{
+							"id": "dfe5af8b-8676-44ed-8918-7f3131d72c08",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"query\": \"{{query}}\",\n  \"variables\": {\n    \"publicationId\": \"{{publicationId}}\",\n    \"api_token\": \"{{api_token}}\"\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/graphql?api-version=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"graphql"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Send request to get article, publication, search, analytics and submit suggestion."
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"<string>\",\n  \"status\": \"<string>\",\n  \"name\": \"<string>\",\n  \"message\": \"<string>\",\n  \"info\": \"<string>\"\n}"
+						},
+						{
+							"id": "8076cd17-9b30-47fe-ba9d-10bfcf9b5be0",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"query\": \"{{query}}\",\n  \"variables\": {\n    \"publicationId\": \"{{publicationId}}\",\n    \"api_token\": \"{{api_token}}\"\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/graphql?api-version=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"graphql"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Send request to get article, publication, search, analytics and submit suggestion."
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"<string>\",\n  \"status\": \"<string>\",\n  \"name\": \"<string>\",\n  \"message\": \"<string>\",\n  \"info\": \"<string>\"\n}"
+						},
+						{
+							"id": "42fd5f31-a59e-4ae9-ab41-944693d36244",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"query\": \"{{query}}\",\n  \"variables\": {\n    \"publicationId\": \"{{publicationId}}\",\n    \"api_token\": \"{{api_token}}\"\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/graphql?api-version=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"graphql"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Send request to get article, publication, search, analytics and submit suggestion."
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"<string>\",\n  \"status\": \"<string>\",\n  \"name\": \"<string>\",\n  \"message\": \"<string>\",\n  \"info\": \"<string>\"\n}"
+						},
+						{
+							"id": "719be682-f704-46a3-8fe2-0214b32ad9d0",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"query\": \"{{query}}\",\n  \"variables\": {\n    \"publicationId\": \"{{publicationId}}\",\n    \"api_token\": \"{{api_token}}\"\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/graphql?api-version=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"graphql"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Send request to get article, publication, search, analytics and submit suggestion."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"<string>\",\n  \"status\": \"<string>\",\n  \"name\": \"<string>\",\n  \"message\": \"<string>\",\n  \"info\": \"<string>\"\n}"
+						},
+						{
+							"id": "ac52ed0e-7607-49b9-bf27-c58bb10f07f1",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "API Version. If no version is provided it defaults to latest version.",
+										"key": "api-version",
+										"value": "",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"query\": \"{{query}}\",\n  \"variables\": {\n    \"publicationId\": \"{{publicationId}}\",\n    \"api_token\": \"{{api_token}}\"\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/graphql?api-version=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"graphql"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "",
+											"description": "API Version. If no version is provided it defaults to latest version.",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Send request to get article, publication, search, analytics and submit suggestion."
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"<string>\",\n  \"status\": \"<string>\",\n  \"name\": \"<string>\",\n  \"message\": \"<string>\",\n  \"info\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "64e44f5d-0b6d-4ab3-acbb-aa407be2bc67"
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "clientSecret",
+				"value": "{{client_secret}}",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{client_id}}",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "body",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://api-prd.kpn.com/oauth/client_credential/accesstoken?grant_type=client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "access_token",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d1c7a3dd-29d7-4358-93e9-072a5651b7fa",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8e033757-321f-4862-93be-f43223af04ad",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "41baaf79-b462-4f5f-a5e3-93882bf93850",
+			"key": "baseUrl",
+			"value": "https://api-prd.kpn.com/data/pollyhelp/knowledgemanagement"
+		},
+		{
+			"id": "35ed49e7-3fdf-4b2b-9240-237b5751fdb8",
+			"key": "client_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "1ac8b486-381f-42f6-89f6-e226f893010d",
+			"key": "client_secret",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "e6dcce62-5145-4833-a5da-7c0fc7ee3169",
+			"key": "query",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "341de65b-a950-4bb4-82f4-b68012b5e2fc",
+			"key": "publicationId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "693438d2-1a31-458c-85a8-ced0c254641e",
+			"key": "api_token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
